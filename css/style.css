@@ -1,0 +1,171 @@
+:root {
+    font-family: 'Poppins', sans-serif;
+    --purple: rgba(68,36,164,1);
+    --blue: rgba(84,212,228,1) ;
+    --text-color:  #333333;
+    --accent-color: #FFC107;
+
+}
+
+body {
+    background-image: linear-gradient( 90.1deg,  rgba(84,212,228,1) 0.2%, rgba(68,36,164,1) 99.9% );
+}
+
+.content {
+    padding: 10vh 3em 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+    
+}
+
+.main-div {
+    color: var(--text-color);
+    flex-grow: 1;
+    flex-basis: auto;
+    min-width: 600px;
+    max-width: 800px;
+    padding: 4em 2em 2em;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px ;
+    display: flex;
+    background-image: linear-gradient(to right bottom, #eaeaea, #efefef, #f4f4f4, #fafafa, #ffffff);
+    border-radius: 10px;
+    gap: 2em;
+}
+  
+.backpack {
+    min-width: 170px;
+    max-width: 170px;
+    height: 180px;
+    padding-top: 80px;
+    background-color: var(--purple);
+    box-shadow: inset 0 6px 0 2px #1e046b, 0 -93px 0 -77px var(--purple), 0 -93px 0 -72px #1e046b, 0 -93px 0 -68px #1e046b;
+    background-image: linear-gradient(to right, transparent 5px, transparent 20px, transparent 1px, transparent 25px, transparent 5px, transparent 20px, transparent 20px, transparent 86px, #1e046b 45px, #1e046b 230px, transparent 25px, transparent 172px );
+    background-position: center 254px;
+    background-size: 305px 6px;
+    background-repeat: repeat-x; 
+    border: 5px solid #1e046b;
+    border-radius: 85px 85px 44px 44px;
+    display: inline-block;
+    vertical-align: top;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+  
+.backpack:before, .backpack:after {
+    display: block;
+    content: '';
+    position: absolute;
+  }
+  
+.backpack:before {
+    height: 75px;
+    width: 118px;
+    background-image: radial-gradient(circle closest-corner at 13px 29px , var(--blue), var(--blue) 2px, transparent 2px, transparent), radial-gradient(circle closest-corner at 13px 29px ,var(--blue), var(--blue) 4px, transparent 4px, transparent), linear-gradient(to bottom, transparent 10px, transparent 15px, var(--blue) 5px, var(--blue) 18px, transparent 18px, transparent 100px), linear-gradient(to right, #1e046b 10px, var(--blue) 10px, transparent 10px, transparent 16px, var(--purple) 9px, var(--purple) 50px), linear-gradient(to bottom, #1e046b 8px, #1e046b 16px, #1e046b 8px, #1e046b 30px, #1e046b 20px,#1e046b 72px, #1e046b 10px, #1e046b 57px, #1e046b 5%);
+    margin-left: 22px;
+    margin-top: 58px;
+    border: 4px solid var(--blue);
+    border-radius: 11px;
+    box-shadow: 0 4px 0 0 var(--blue), inset 0px 4px 1px 0 var(--purple);
+    content: '||';
+    color: transparent;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    z-index: 1;
+    text-shadow: var(--blue) -2px -86px 0px;
+    font-size: 14px;
+}
+  
+
+
+.form {
+    width: 100%;
+}
+
+.default-input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0.5em 0 1em;
+    padding: 1em 0.5em;
+    border-radius: 10px;
+    border: 2px solid var(--purple);
+}
+
+.form label {
+    display: block;
+}
+
+.add-btn {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0.5em 0 1em;
+    padding: 1em 0.5em;
+    background: #eaeaea;
+    color: #FFFFFF;
+    font-size: 1em;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient( 90.1deg,  rgba(84,212,228,1) 0.2%, rgba(68,36,164,1) 99.9% );
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    transition: all 0.5s ease;
+    background: linear-gradient( -90.1deg,  rgba(84,212,228,1) 0.2%, rgba(68,36,164,1) 99.9% );
+    cursor: pointer;
+
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    color: var(--text-color);
+    list-style: none;
+    padding: 0.6em 2em;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 0 0 1em;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px ;
+    display: inline-flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 20px;
+}
+
+.item strong {
+    background: var(--accent-color);
+    border-radius: 50%;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-weight: 400;
+}
+.btn-remove {
+    border: 2.5px solid #FF0000;
+    border-radius: 50%;
+    color: #FF0000;
+    font-weight: bold;
+    background: #FFFFFF;
+    width:2em;
+    height: 2em;
+    margin: 0 0 0 1em;
+}
+.btn-remove:hover {
+    cursor: pointer;
+    background: #f8f8f8;
+
+}
+
+@media(max-width: 768px){
+
+}
